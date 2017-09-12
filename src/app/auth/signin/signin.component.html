@@ -1,8 +1,8 @@
 <div class="row">
   <div class="col-xs-12 col-sm-10 col-md-8 col-sm-offset-1 col-md-offset-2">
 
-    <h1>Signup</h1>
-    <form (ngSubmit)="signup(f)" #f="ngForm">
+    <h1>Login</h1>
+    <form (ngSubmit)="signin(f)" #f="ngForm">
 
       <div class="form-group">
         <label for="email">Email</label>
@@ -14,7 +14,7 @@
         <input ngModel id="password" name="password" type="password" class="form-control">
       </div>
 
-      <button type="submit" class="btn btn-primary">Sign up!</button>
+      <button type="submit" class="btn btn-primary">Login</button>
 
     </form>
 
