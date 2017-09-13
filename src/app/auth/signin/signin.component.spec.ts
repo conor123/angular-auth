@@ -1,15 +1,18 @@
 import { TestBed } from '@angular/core/testing';
 import { RouterTestingModule } from '@angular/router/testing';
+import { FormsModule } from "@angular/forms";
+
 import { SigninComponent } from './signin.component';
 import { AppComponent } from '../../app.component';
-import { FormsModule } from "@angular/forms";
+
+import { AuthService } from '../auth.service';
 
 describe('Component: Signin', () => {
   beforeEach(() => {
     TestBed.configureTestingModule({
       declarations: [SigninComponent],
       imports: [RouterTestingModule, FormsModule],
-      providers: [AppComponent]
+      providers: [AppComponent, AuthService]
     });
   })
 

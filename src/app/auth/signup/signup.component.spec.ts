@@ -4,12 +4,14 @@ import { SignupComponent } from './signup.component';
 import { AppComponent } from '../../app.component';
 import { FormsModule } from "@angular/forms";
 
+import { AuthService } from '../auth.service';
+
 describe('Component: Signup', () => {
   beforeEach(() => {
     TestBed.configureTestingModule({
       declarations: [SignupComponent],
       imports: [RouterTestingModule, FormsModule],
-      providers: [AppComponent]
+      providers: [AppComponent, AuthService]
     });
   })
 

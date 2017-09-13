@@ -15,8 +15,6 @@ export class AppComponent implements OnInit{
   constructor(config: ConfigService){
     this.apiKey = config.getApiKey(),
     this.apiDomain = config.getApiDomain()
-
-    console.log("INFO: " + this.apiKey);
   }
 
   ngOnInit(){
