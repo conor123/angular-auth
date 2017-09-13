@@ -18,11 +18,11 @@ describe('Component: Home', () => {
     expect(app).toBeTruthy();
   });
 
-  it('Should Display the Home Heading 2 Text', () => {
+  it(`Should Contain the Home Heading 1 Text: 'Welcome'`, () => {
     let fixture = TestBed.createComponent(HomeComponent);
     let app = fixture.debugElement.nativeElement;
-    const content = app.querySelector('h2').textContent;
-    expect(content).toContain('Signup');
+    const content = app.querySelector('h1').textContent;
+    expect(content).toContain('Welcome');
   });
 });
 
