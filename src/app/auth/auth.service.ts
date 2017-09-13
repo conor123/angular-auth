@@ -24,7 +24,7 @@ export class AuthService {
           this.router.navigate(['/']);
           firebase.auth()
             .currentUser
-            .getToken()
+            .getIdToken()
             .then(
               (token: string) => {this.token = token}
             ).catch(
