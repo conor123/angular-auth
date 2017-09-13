@@ -12,6 +12,10 @@ import { SigninComponent } from './auth/signin/signin.component';
 import { AppRoutingModule } from './app-routing.module';
 import { PageNotFoundComponent } from "./page-not-found/page-not-found.component";
 
+import { AuthService } from './auth/auth.service';
+import { ConfigService } from './config/config.service';
+
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -27,7 +31,7 @@ import { PageNotFoundComponent } from "./page-not-found/page-not-found.component
     HttpModule,
     AppRoutingModule
   ],
-  providers: [],
+  providers: [AuthService, ConfigService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
