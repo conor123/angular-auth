@@ -18,7 +18,7 @@ describe('Component: Home', () => {
     expect(app).toBeTruthy();
   });
 
-  it('Should Display the Home Heading 1 Text', () => {
+  it('Should Display the Home Heading 2 Text', () => {
     let fixture = TestBed.createComponent(HomeComponent);
     let app = fixture.debugElement.nativeElement;
     const content = app.querySelector('h2').textContent;
