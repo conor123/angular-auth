@@ -11,6 +11,7 @@ import { SigninComponent } from './auth/signin/signin.component';
 
 import { AppRoutingModule } from './app-routing.module';
 import { PageNotFoundComponent } from "./page-not-found/page-not-found.component";
+import { DashboardComponent } from './dashboard/dashboard.component';
 
 import { AuthService } from './auth/auth.service';
 import { ConfigService } from './config/config.service';
@@ -23,7 +24,8 @@ import { ConfigService } from './config/config.service';
     HomeComponent,
     SignupComponent,
     SigninComponent,
-    PageNotFoundComponent
+    PageNotFoundComponent,
+    DashboardComponent
   ],
   imports: [
     BrowserModule,
