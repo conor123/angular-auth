@@ -9,9 +9,11 @@
       <ul class="nav navbar-nav">
         <li><a href="About"></a></li>
       </ul>
+
       <ul class="nav navbar-nav navbar-right">
-        <li><a routerLink="/signup">Signup</a></li>
-        <li><a routerLink="/signin">Login</a></li>
+        <li><a *ngIf="!authService.isAuthenticated()" routerLink="/signup">Signup</a></li>
+        <li><a *ngIf="!authService.isAuthenticated()" routerLink="/signin">Login</a></li>
+        <li><a style="cursor: pointer;" (click)="logout()" *ngIf="authService.isAuthenticated()" >Logout</a></li>
       </ul>
     </div>
 

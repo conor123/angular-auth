@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 
 import { AppComponent } from '../app.component';
+import { AuthService } from "../auth/auth.service";
 
 @Component({
   selector: 'app-header',
@@ -8,9 +9,13 @@ import { AppComponent } from '../app.component';
 })
 export class HeaderComponent {
   private title: string;
-  constructor(appComponent: AppComponent){
+  constructor(appComponent: AppComponent, private authService: AuthService){
     this.title = appComponent.title;
   }
   setData(){}
   getData(){}
+
+  logout(){
+    this.authService.logout();
+  }
 }

@@ -15,6 +15,7 @@ import { DashboardComponent } from './dashboard/dashboard.component';
 
 import { AuthService } from './auth/auth.service';
 import { ConfigService } from './config/config.service';
+import { RouteProtectionService } from "./auth/route-protection.service";
 
 
 @NgModule({
@@ -33,7 +34,7 @@ import { ConfigService } from './config/config.service';
     HttpModule,
     AppRoutingModule
   ],
-  providers: [AuthService, ConfigService],
+  providers: [AuthService, ConfigService, RouteProtectionService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

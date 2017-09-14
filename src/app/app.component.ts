@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { ConfigService } from './config/config.service';
+
 import * as firebase from 'firebase';
 
 @Component({
@@ -18,7 +19,6 @@ export class AppComponent implements OnInit{
   }
 
   ngOnInit(){
-
     firebase.initializeApp({
       apiKey: this.apiKey,
       authDomain: this.apiDomain
