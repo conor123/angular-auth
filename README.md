@@ -1,6 +1,15 @@
 # AngularAuth
-Building a stateless user registration and authentication web application.
+Building a 'stateless' or stateful user registration and authentication web application.
 
+# Build
+
+`npm install`
+
+# Set up config
+rename template.config.service.ts to config.service.ts
+Fill in firebase key and ID
+
+# Angular Project
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.0.3.
 
 ## Development server
